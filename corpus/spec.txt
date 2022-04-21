@@ -37,8 +37,8 @@ key = # INVALID
 
 (document
   (ERROR
-    (bare_key)
-    (comment)))
+    (bare_key))
+  (comment))
 
 ================================================================================
 INVALID - key/value pair - no newline between pairs
@@ -123,11 +123,11 @@ INVALID - keys - empty bare key
 --------------------------------------------------------------------------------
 
 (document
-  (ERROR)
+  (ERROR
+    (quoted_key))
+  (comment)
   (pair
     (quoted_key)
-    (comment)
-    (ERROR)
     (string)
     (comment))
   (pair
